@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://byxwe4itvfe3s"]
+
+[ext_resource type="Texture2D" uid="uid://b6uj1asb2fied" path="res://Textures/Enviro/platf03.png" id="1_2y16c"]
+
+[node name="Platform3" type="StaticBody2D"]
+collision_layer = 3
+collision_mask = 3
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_2y16c")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-65, 14, -41, 27, 42, 26, 65, 15, 50, -19, 30, -25, -34, -21, -47, -16)

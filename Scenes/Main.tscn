@@ -1,0 +1,221 @@
+[gd_scene load_steps=11 format=3 uid="uid://b3r0vbecuwaut"]
+
+[ext_resource type="Script" path="res://Scripts/Main.cs" id="1_8x7uq"]
+[ext_resource type="Texture2D" uid="uid://cfyoq1o7l8oqt" path="res://Textures/Enviro/background.jpg" id="1_dn7b2"]
+[ext_resource type="PackedScene" uid="uid://b5g5giprmcdt3" path="res://Scenes/platforms/Platform1.tscn" id="2_cw1hd"]
+[ext_resource type="PackedScene" uid="uid://ddspv00hdtue1" path="res://Scenes/collectibles/Burger.tscn" id="2_q0c5a"]
+[ext_resource type="PackedScene" uid="uid://bhf6lp5fghdre" path="res://Scenes/collectibles/Fish.tscn" id="3_4gob5"]
+[ext_resource type="PackedScene" uid="uid://bod8sfvp2ca8q" path="res://Scenes/platforms/Platform2.tscn" id="3_l221e"]
+[ext_resource type="PackedScene" uid="uid://byxwe4itvfe3s" path="res://Scenes/platforms/Platform3.tscn" id="4_e04kj"]
+[ext_resource type="PackedScene" uid="uid://bqw3odlq2s1ow" path="res://Scenes/WaterDrop.tscn" id="4_q6nq4"]
+[ext_resource type="PackedScene" uid="uid://osj4p1quvk7p" path="res://Scenes/platforms/Platform4.tscn" id="5_tk8bc"]
+[ext_resource type="PackedScene" uid="uid://d21se6gv636i3" path="res://Scenes/Player.tscn" id="6_xawso"]
+
+[node name="Main" type="Node2D" node_paths=PackedStringArray("player", "burgerContainer", "fishContainer", "waterSpawner", "camera")]
+script = ExtResource("1_8x7uq")
+player = NodePath("GameContainer/Player")
+burger = ExtResource("2_q0c5a")
+fish = ExtResource("3_4gob5")
+waterDrop = ExtResource("4_q6nq4")
+burgerContainer = NodePath("GameContainer/Collectables/BurgerContainer")
+fishContainer = NodePath("GameContainer/Collectables/FishContainer")
+waterSpawner = NodePath("GameContainer/WaterSpawner")
+camera = NodePath("GameContainer/Player/Camera2D")
+timeBetweenDropSpawn = 0.01
+
+[node name="Backgrounds" type="Node2D" parent="."]
+
+[node name="bg1" type="Sprite2D" parent="Backgrounds"]
+position = Vector2(577, 138)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_dn7b2")
+
+[node name="bg2" type="Sprite2D" parent="Backgrounds"]
+position = Vector2(2376, 138)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_dn7b2")
+flip_h = true
+
+[node name="bg3" type="Sprite2D" parent="Backgrounds"]
+texture_repeat = 3
+position = Vector2(-1222, 138)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_dn7b2")
+flip_h = true
+
+[node name="GameContainer" type="Node2D" parent="."]
+
+[node name="PlatformsContainer" type="Node2D" parent="GameContainer"]
+
+[node name="Platform20" parent="GameContainer/PlatformsContainer" instance=ExtResource("2_cw1hd")]
+position = Vector2(519, 602)
+
+[node name="Platform19" parent="GameContainer/PlatformsContainer" instance=ExtResource("2_cw1hd")]
+position = Vector2(184, 601)
+
+[node name="Platform21" parent="GameContainer/PlatformsContainer" instance=ExtResource("2_cw1hd")]
+position = Vector2(848, 604)
+
+[node name="Platform1" parent="GameContainer/PlatformsContainer/Platform21" instance=ExtResource("2_cw1hd")]
+position = Vector2(657, 1)
+
+[node name="Platform3" parent="GameContainer/PlatformsContainer/Platform21" instance=ExtResource("2_cw1hd")]
+position = Vector2(988, 2)
+
+[node name="Platform22" parent="GameContainer/PlatformsContainer" instance=ExtResource("2_cw1hd")]
+position = Vector2(1183, 605)
+
+[node name="Platform1" parent="GameContainer/PlatformsContainer" instance=ExtResource("2_cw1hd")]
+position = Vector2(-482, 600)
+
+[node name="Platform2" parent="GameContainer/PlatformsContainer" instance=ExtResource("3_l221e")]
+position = Vector2(-110, 443)
+rotation = 0.275771
+
+[node name="Platform3" parent="GameContainer/PlatformsContainer" instance=ExtResource("2_cw1hd")]
+position = Vector2(-147, 601)
+
+[node name="Platform4" parent="GameContainer/PlatformsContainer" instance=ExtResource("3_l221e")]
+position = Vector2(268, 394)
+rotation = 0.0578821
+
+[node name="Platform5" parent="GameContainer/PlatformsContainer" instance=ExtResource("4_e04kj")]
+position = Vector2(312, 362)
+rotation = 0.0767719
+
+[node name="Platform6" parent="GameContainer/PlatformsContainer" instance=ExtResource("4_e04kj")]
+position = Vector2(986, 478)
+
+[node name="Platform23" parent="GameContainer/PlatformsContainer" instance=ExtResource("5_tk8bc")]
+position = Vector2(-658, 420)
+rotation = -1.52392
+scale = Vector2(1.36657, -1.14907)
+
+[node name="Platform7" parent="GameContainer/PlatformsContainer" instance=ExtResource("5_tk8bc")]
+position = Vector2(1121, 542)
+
+[node name="Platform25" parent="GameContainer/PlatformsContainer" instance=ExtResource("5_tk8bc")]
+position = Vector2(2096, 399.997)
+rotation = 1.47888
+scale = Vector2(1.25532, -1.18658)
+
+[node name="Platform24" parent="GameContainer/PlatformsContainer" instance=ExtResource("5_tk8bc")]
+position = Vector2(2005, 539.997)
+rotation = 2.09884
+scale = Vector2(1, -1)
+
+[node name="Platform8" parent="GameContainer/PlatformsContainer" instance=ExtResource("5_tk8bc")]
+position = Vector2(820, 542)
+rotation = 3.14159
+scale = Vector2(1, -1)
+
+[node name="Platform9" parent="GameContainer/PlatformsContainer" instance=ExtResource("2_cw1hd")]
+position = Vector2(2145, 517)
+rotation = -1.01106
+scale = Vector2(1, 3.16755)
+
+[node name="Platform10" parent="GameContainer/PlatformsContainer" instance=ExtResource("2_cw1hd")]
+position = Vector2(6, 218)
+rotation = 0.136867
+
+[node name="Platform11" parent="GameContainer/PlatformsContainer" instance=ExtResource("3_l221e")]
+position = Vector2(972, 349)
+rotation = 0.078428
+
+[node name="Platform12" parent="GameContainer/PlatformsContainer" instance=ExtResource("3_l221e")]
+position = Vector2(606, 335)
+rotation = -0.0464228
+
+[node name="Platform13" parent="GameContainer/PlatformsContainer" instance=ExtResource("3_l221e")]
+position = Vector2(1315, 461)
+rotation = -0.0594873
+
+[node name="Platform14" parent="GameContainer/PlatformsContainer" instance=ExtResource("3_l221e")]
+position = Vector2(1546, 311)
+rotation = -0.312253
+
+[node name="Platform15" parent="GameContainer/PlatformsContainer" instance=ExtResource("5_tk8bc")]
+position = Vector2(-464, 541)
+
+[node name="Platform16" parent="GameContainer/PlatformsContainer" instance=ExtResource("4_e04kj")]
+position = Vector2(71, 581)
+
+[node name="Platform17" parent="GameContainer/PlatformsContainer" instance=ExtResource("4_e04kj")]
+position = Vector2(1802, 581)
+
+[node name="Platform18" parent="GameContainer/PlatformsContainer" instance=ExtResource("3_l221e")]
+position = Vector2(1720, 469)
+rotation = 0.114267
+
+[node name="Collectables" type="Node2D" parent="GameContainer"]
+
+[node name="BurgerContainer" type="Node2D" parent="GameContainer/Collectables"]
+
+[node name="Burger" parent="GameContainer/Collectables/BurgerContainer" instance=ExtResource("2_q0c5a")]
+position = Vector2(1304, 406)
+
+[node name="Burger8" parent="GameContainer/Collectables/BurgerContainer" instance=ExtResource("2_q0c5a")]
+position = Vector2(977, 287)
+
+[node name="Burger9" parent="GameContainer/Collectables/BurgerContainer" instance=ExtResource("2_q0c5a")]
+position = Vector2(1141, 289)
+
+[node name="Burger2" parent="GameContainer/Collectables/BurgerContainer" instance=ExtResource("2_q0c5a")]
+position = Vector2(1391, 397)
+
+[node name="Burger3" parent="GameContainer/Collectables/BurgerContainer" instance=ExtResource("2_q0c5a")]
+position = Vector2(1508, 518)
+
+[node name="Burger4" parent="GameContainer/Collectables/BurgerContainer" instance=ExtResource("2_q0c5a")]
+position = Vector2(1663, 396)
+
+[node name="Burger5" parent="GameContainer/Collectables/BurgerContainer" instance=ExtResource("2_q0c5a")]
+position = Vector2(1759, 394)
+
+[node name="Burger6" parent="GameContainer/Collectables/BurgerContainer" instance=ExtResource("2_q0c5a")]
+position = Vector2(1600, 222)
+
+[node name="Burger7" parent="GameContainer/Collectables/BurgerContainer" instance=ExtResource("2_q0c5a")]
+position = Vector2(1500, 248)
+
+[node name="FishContainer" type="Node2D" parent="GameContainer/Collectables"]
+
+[node name="Fish" parent="GameContainer/Collectables/FishContainer" instance=ExtResource("3_4gob5")]
+position = Vector2(547, 264)
+
+[node name="Fish2" parent="GameContainer/Collectables/FishContainer" instance=ExtResource("3_4gob5")]
+position = Vector2(634, 258)
+
+[node name="Fish3" parent="GameContainer/Collectables/FishContainer" instance=ExtResource("3_4gob5")]
+position = Vector2(215, 328)
+
+[node name="Fish4" parent="GameContainer/Collectables/FishContainer" instance=ExtResource("3_4gob5")]
+position = Vector2(90, 488)
+
+[node name="Fish5" parent="GameContainer/Collectables/FishContainer" instance=ExtResource("3_4gob5")]
+position = Vector2(222, 520)
+
+[node name="Fish6" parent="GameContainer/Collectables/FishContainer" instance=ExtResource("3_4gob5")]
+position = Vector2(339, 520)
+
+[node name="WaterSpawner" type="Marker2D" parent="GameContainer"]
+position = Vector2(835, -507)
+
+[node name="Player" parent="GameContainer" instance=ExtResource("6_xawso")]
+position = Vector2(-103, -117)
+floor_max_angle = 1.01578
+
+[node name="Camera2D" type="Camera2D" parent="GameContainer/Player"]
+position = Vector2(0, -182)
+zoom = Vector2(0.8, 0.8)
+limit_smoothed = true
+position_smoothing_enabled = true
+rotation_smoothing_enabled = true
+drag_horizontal_offset = 0.05
+drag_vertical_offset = 0.94
+drag_left_margin = 0.26
+drag_top_margin = 0.0
+drag_right_margin = 0.17
+drag_bottom_margin = 0.86
+editor_draw_limits = true
+editor_draw_drag_margin = true

@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://b5g5giprmcdt3"]
+
+[ext_resource type="Texture2D" uid="uid://dsp77nrqn3yp2" path="res://Textures/Enviro/platf01.png" id="1_fnig8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ljixf"]
+size = Vector2(342, 49)
+
+[node name="Platform1" type="StaticBody2D"]
+collision_layer = 3
+collision_mask = 3
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_fnig8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2, 14.5)
+shape = SubResource("RectangleShape2D_ljixf")
+one_way_collision = true
