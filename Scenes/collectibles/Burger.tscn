@@ -1,5 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://ddspv00hdtue1"]
+[gd_scene load_steps=4 format=3 uid="uid://ddspv00hdtue1"]
 
+[ext_resource type="Script" path="res://Scripts/GameObjects/Collectables/Collectable.cs" id="1_crr6o"]
 [ext_resource type="Texture2D" uid="uid://bi7ijtdrwehcv" path="res://Textures/collectibles/burger.png" id="1_l253g"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_fcd13"]
@@ -8,6 +9,8 @@ radius = 26.0192
 [node name="Burger" type="Area2D"]
 collision_layer = 2
 collision_mask = 2
+script = ExtResource("1_crr6o")
+type = 1
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.1, 0.1)

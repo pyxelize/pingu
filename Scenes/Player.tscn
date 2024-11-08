@@ -1,6 +1,7 @@
-[gd_scene load_steps=19 format=3 uid="uid://d21se6gv636i3"]
+[gd_scene load_steps=20 format=3 uid="uid://d21se6gv636i3"]
 
 [ext_resource type="Texture2D" uid="uid://dotlh5oki354a" path="res://Textures/character/penguin_idle.png" id="1_fb7ew"]
+[ext_resource type="Script" path="res://Scripts/GameObjects/Player.cs" id="1_njfun"]
 [ext_resource type="Texture2D" uid="uid://b7e0v6ker458w" path="res://Textures/character/penguin_Walk.png" id="2_lhjtb"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ddkx6"]
@@ -120,6 +121,7 @@ floor_max_angle = 1.64934
 floor_snap_length = 4.1
 platform_on_leave = 1
 safe_margin = 0.001
+script = ExtResource("1_njfun")
 
 [node name="anim" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.5, 0.5)

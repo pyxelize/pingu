@@ -1,10 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Isart\\GDP1\\Prog\\OOP S1\\02_Collisions_Phisiques_Correction\\",
+  "WorkspaceRootPath": "D:\\Isart\\GDP1\\Prog\\OOP S1\\pingu\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D4C81B27-CF48-49B5-8682-1B0D6910D33F}|01_CollisionsPhysiques.csproj|d:\\isart\\gdp1\\prog\\oop s1\\02_collisions_phisiques_correction\\scripts\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D4C81B27-CF48-49B5-8682-1B0D6910D33F}|01_CollisionsPhysiques.csproj|d:\\isart\\gdp1\\prog\\oop s1\\pingu\\scripts\\gameobjects\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4C81B27-CF48-49B5-8682-1B0D6910D33F}|01_CollisionsPhysiques.csproj|solutionrelative:scripts\\gameobjects\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4C81B27-CF48-49B5-8682-1B0D6910D33F}|01_CollisionsPhysiques.csproj|d:\\isart\\gdp1\\prog\\oop s1\\pingu\\scripts\\gameobjects\\collectables\\collectable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4C81B27-CF48-49B5-8682-1B0D6910D33F}|01_CollisionsPhysiques.csproj|solutionrelative:scripts\\gameobjects\\collectables\\collectable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4C81B27-CF48-49B5-8682-1B0D6910D33F}|01_CollisionsPhysiques.csproj|d:\\isart\\gdp1\\prog\\oop s1\\pingu\\scripts\\gameobjects\\collectables\\collectabletypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4C81B27-CF48-49B5-8682-1B0D6910D33F}|01_CollisionsPhysiques.csproj|solutionrelative:scripts\\gameobjects\\collectables\\collectabletypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4C81B27-CF48-49B5-8682-1B0D6910D33F}|01_CollisionsPhysiques.csproj|d:\\isart\\gdp1\\prog\\oop s1\\pingu\\scripts\\vfx\\particles\\waterspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4C81B27-CF48-49B5-8682-1B0D6910D33F}|01_CollisionsPhysiques.csproj|solutionrelative:scripts\\vfx\\particles\\waterspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4C81B27-CF48-49B5-8682-1B0D6910D33F}|01_CollisionsPhysiques.csproj|d:\\isart\\gdp1\\prog\\oop s1\\pingu\\scripts\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D4C81B27-CF48-49B5-8682-1B0D6910D33F}|01_CollisionsPhysiques.csproj|solutionrelative:scripts\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4C81B27-CF48-49B5-8682-1B0D6910D33F}|01_CollisionsPhysiques.csproj|d:\\isart\\gdp1\\prog\\oop s1\\pingu\\scripts\\tools\\inputs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4C81B27-CF48-49B5-8682-1B0D6910D33F}|01_CollisionsPhysiques.csproj|solutionrelative:scripts\\tools\\inputs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +34,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WaterSpawner.cs",
+              "DocumentMoniker": "D:\\Isart\\GDP1\\Prog\\OOP S1\\pingu\\Scripts\\VFX\\Particles\\WaterSpawner.cs",
+              "RelativeDocumentMoniker": "Scripts\\VFX\\Particles\\WaterSpawner.cs",
+              "ToolTip": "D:\\Isart\\GDP1\\Prog\\OOP S1\\pingu\\Scripts\\VFX\\Particles\\WaterSpawner.cs",
+              "RelativeToolTip": "Scripts\\VFX\\Particles\\WaterSpawner.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwB4AAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T11:10:50.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Collectable.cs",
+              "DocumentMoniker": "D:\\Isart\\GDP1\\Prog\\OOP S1\\pingu\\Scripts\\GameObjects\\Collectables\\Collectable.cs",
+              "RelativeDocumentMoniker": "Scripts\\GameObjects\\Collectables\\Collectable.cs",
+              "ToolTip": "D:\\Isart\\GDP1\\Prog\\OOP S1\\pingu\\Scripts\\GameObjects\\Collectables\\Collectable.cs",
+              "RelativeToolTip": "Scripts\\GameObjects\\Collectables\\Collectable.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T10:33:47.689Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -26,15 +72,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "CollectableTypes.cs",
+              "DocumentMoniker": "D:\\ISART\\GDP1\\PROG\\OOP S1\\PINGU\\Scripts\\GameObjects\\Collectables\\CollectableTypes.cs",
+              "RelativeDocumentMoniker": "Scripts\\GameObjects\\Collectables\\CollectableTypes.cs",
+              "ToolTip": "D:\\ISART\\GDP1\\PROG\\OOP S1\\PINGU\\Scripts\\GameObjects\\Collectables\\CollectableTypes.cs",
+              "RelativeToolTip": "Scripts\\GameObjects\\Collectables\\CollectableTypes.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T10:42:43.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Main.cs",
-              "DocumentMoniker": "D:\\Isart\\GDP1\\Prog\\OOP S1\\02_Collisions_Phisiques_Correction\\Scripts\\Main.cs",
+              "DocumentMoniker": "D:\\Isart\\GDP1\\Prog\\OOP S1\\pingu\\Scripts\\Main.cs",
               "RelativeDocumentMoniker": "Scripts\\Main.cs",
-              "ToolTip": "D:\\Isart\\GDP1\\Prog\\OOP S1\\02_Collisions_Phisiques_Correction\\Scripts\\Main.cs",
+              "ToolTip": "D:\\Isart\\GDP1\\Prog\\OOP S1\\pingu\\Scripts\\Main.cs",
               "RelativeToolTip": "Scripts\\Main.cs",
-              "ViewState": "AQIAAJ0AAAAAAAAAAAAcwFkAAAAXAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-04T07:19:02.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Player.cs",
+              "DocumentMoniker": "D:\\Isart\\GDP1\\Prog\\OOP S1\\pingu\\Scripts\\GameObjects\\Player.cs",
+              "RelativeDocumentMoniker": "Scripts\\GameObjects\\Player.cs",
+              "ToolTip": "D:\\Isart\\GDP1\\Prog\\OOP S1\\pingu\\Scripts\\GameObjects\\Player.cs",
+              "RelativeToolTip": "Scripts\\GameObjects\\Player.cs",
+              "ViewState": "AQIAAFYAAAAAAAAAAAAqwHEAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T10:29:11.469Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Inputs.cs",
+              "DocumentMoniker": "D:\\Isart\\GDP1\\Prog\\OOP S1\\pingu\\Scripts\\Tools\\Inputs.cs",
+              "RelativeDocumentMoniker": "Scripts\\Tools\\Inputs.cs",
+              "ToolTip": "D:\\Isart\\GDP1\\Prog\\OOP S1\\pingu\\Scripts\\Tools\\Inputs.cs",
+              "RelativeToolTip": "Scripts\\Tools\\Inputs.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T10:18:29.982Z",
               "EditorCaption": ""
             }
           ]

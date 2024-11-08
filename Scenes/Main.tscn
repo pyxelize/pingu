@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://b3r0vbecuwaut"]
+[gd_scene load_steps=12 format=3 uid="uid://b3r0vbecuwaut"]
 
 [ext_resource type="Script" path="res://Scripts/Main.cs" id="1_8x7uq"]
 [ext_resource type="Texture2D" uid="uid://cfyoq1o7l8oqt" path="res://Textures/Enviro/background.jpg" id="1_dn7b2"]
@@ -10,18 +10,11 @@
 [ext_resource type="PackedScene" uid="uid://bqw3odlq2s1ow" path="res://Scenes/WaterDrop.tscn" id="4_q6nq4"]
 [ext_resource type="PackedScene" uid="uid://osj4p1quvk7p" path="res://Scenes/platforms/Platform4.tscn" id="5_tk8bc"]
 [ext_resource type="PackedScene" uid="uid://d21se6gv636i3" path="res://Scenes/Player.tscn" id="6_xawso"]
+[ext_resource type="Script" path="res://Scripts/VFX/Particles/WaterSpawner.cs" id="9_hlv1f"]
 
-[node name="Main" type="Node2D" node_paths=PackedStringArray("player", "burgerContainer", "fishContainer", "waterSpawner", "camera")]
+[node name="Main" type="Node2D" node_paths=PackedStringArray("camera")]
 script = ExtResource("1_8x7uq")
-player = NodePath("GameContainer/Player")
-burger = ExtResource("2_q0c5a")
-fish = ExtResource("3_4gob5")
-waterDrop = ExtResource("4_q6nq4")
-burgerContainer = NodePath("GameContainer/Collectables/BurgerContainer")
-fishContainer = NodePath("GameContainer/Collectables/FishContainer")
-waterSpawner = NodePath("GameContainer/WaterSpawner")
 camera = NodePath("GameContainer/Player/Camera2D")
-timeBetweenDropSpawn = 0.01
 
 [node name="Backgrounds" type="Node2D" parent="."]
 
@@ -200,6 +193,8 @@ position = Vector2(339, 520)
 
 [node name="WaterSpawner" type="Marker2D" parent="GameContainer"]
 position = Vector2(835, -507)
+script = ExtResource("9_hlv1f")
+waterDrop = ExtResource("4_q6nq4")
 
 [node name="Player" parent="GameContainer" instance=ExtResource("6_xawso")]
 position = Vector2(-103, -117)
